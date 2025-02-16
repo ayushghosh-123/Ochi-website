@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div className='w-full  py-8'>
+      
       <Navbar />
       <Landing/>
       <Marquee/>
