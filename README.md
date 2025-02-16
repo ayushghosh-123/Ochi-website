@@ -1,5 +1,5 @@
 # Ochi animated website make by react.
-Hello everyone I make the animated websites of Ochi clone. I learn more about the css part and the animation also . keep visit my website .
+Hello everyone! I have created an animated website that is a clone of Ochi. I have learned a lot about CSS and animations in the process. Keep visiting my website for more updates!
 
 ---
 
