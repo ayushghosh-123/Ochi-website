@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <div className="fixed z-999 w-full px-40 py-8 font-['Neue Monreal'] flex justify-between items-center">
+    <div className="fixed z-[999] w-full px-[5.992vw] py-8 font-[NeueMontreal] flex justify-between  backdrop:blur-2xl">
       <div className="logo">
         <svg
           width="72"
@@ -25,9 +25,9 @@ function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="Links flex gap-5">
-        {["Service", "Our work", "About us", "Contact"].map((item, index, arr) => (
-          <a key={index} className={`text-lg capitalize font-bold ${index === arr.length - 1 ? "ml-32" : ""}`}>
+      <div className="Links flex gap-[3vw]">
+        {["Service", "Our work", "About us", "Contact"].map((item, index) => (
+          <a key={index} className={`text-[2.1vw] md:text-[1.3vw] font-light capitalize ${index === 4 && "ml-[10vw]" }`}>
             {item}
           </a>
         ))}

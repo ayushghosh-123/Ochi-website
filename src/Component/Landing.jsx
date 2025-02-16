@@ -1,43 +1,53 @@
-import { FaArrowUpLong } from "react-icons/fa6";
 
-function Landing() {
+import { motion } from "framer-motion";
+import { BsArrowUpRight } from "react-icons/bs";
+
+const LandingPage = () => {
+  
   return (
-    <div className="w-full h-screen">
-      <div className="TEXTSTRUCTURE mt-52 px-3">
-        {["we create", "eye opening", "presentation"].map((item, index) => (
-          <div key={index} className="masker mt-40 flex w-fit items-center">
-            {index === 1 && <div className="mr-[1vw] rounded-md w-[8vw] h-[5.7vw] -top-[1.2vw] relative bg-amber-400"></div>}
-            <h1 className="flex item-centre uppercase h-full leading-[0vw] text-[9vw] tracking-tight font-['FoundersGrotesk (woff) Roboto sans-serif'] font-semibold">
-              {item}
-            </h1>
+    <div data-scroll data-scroll-speed='-.3' className=" w-full box-border h-screen pt-1">
+      <div className="textstructure mt-32 px-[5.922vw]">
+        {["We Create", "Eye-Opening", "Presentations"].map((text, index) => (
+          <div className="masker " key={index}>
+            <div className="w-fit flex items-end overflow-hidden ">
+              {index === 1 && (
+                <motion.span 
+                initial={{width:0}} 
+                animate={{width:"9vw"}} 
+                transition={{duration:1 , ease: [0.76, 0, 0.24, 1]}}
+                className="w-[9vw] h-[5.9vw] rounded-md mr-2 relative bg-red-400"></motion.span>
+              )}
+              <h1 className="font-['FoundersGrotesk'] leading-[7vw] uppercase text-[9vw] flex items-center">
+                {text}
+              </h1>
+            </div>
           </div>
         ))}
       </div>
-      <div className="border-t-[1px] border-zinc-700 mt-32 flex justify-between items-center py-5 px-20">
+      <div className="border-t border-zinc-600 mt-24 flex items-center justify-between px-[5.922vw] py-4">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
-        ].map((item, index) => (
-          <p
+        ].map((text, index) => (
+          <span
             key={index}
-            className="text-md font-light tracking-wide leading-none"
+            className=" tracking-tight text-[2vw] md:text-[1.3vw] leading-tight "
           >
-            {item}
-          </p>
+            {text}
+          </span>
         ))}
-        <div className="start flex items-centre gap-5">
-          <div className="px-4 py-2 border-[1px] border-zinc-500 font-light text-sm hover:text-white hover:dark:bg-gray-800 uppercase rounded-full">
-            start the project
-          </div>
-          <div className="w-10 h-10 border-[1px] flex items-center justify-center border-zinc-500 rounded-full hover:text-white hover:dark:bg-gray-800">
-            <span className="rotate-[45deg]">
-              <FaArrowUpLong />
-            </span>
-          </div>
+
+        <div className="start flex items-center gap-2">
+          <span className="tracking-tight text-[2vw] md:text-[1.2vw] leading-tight border border-zinc-400 rounded-full px-3 py-[0.35rem] uppercase font-extralight">
+            Start the project
+          </span>
+          <span className="w-8 h-8 border hover:dark:bg-gray-800 text-black hover:text-white border-zinc-400 p-2 rounded-full font-[900] flex items-center justify-center box-border text-sm">
+            <BsArrowUpRight />
+          </span>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Landing;
+export default LandingPage;
