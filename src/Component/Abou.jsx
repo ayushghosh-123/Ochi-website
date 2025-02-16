@@ -29,6 +29,17 @@ function Abou() {
             <span className="underline underline-offset-1">Linkedin</span>
           </div>
         </div>
+        <div className="w-full flex gap-5 border-t-[1px] pt-10 mt-20 border-[#9daa7472]">
+            <div className="w-1/2 ">
+                <h1 className="text-7xl">Our Approach</h1>
+                <button className=" flex uppercase gap-10 items-centre px-10 py-6 bg-zinc-900 mt-10 rounded-full text-white ">Read more
+                    <div className="w-3 h-3 bg-zinc-100 rounded-full"></div>
+                </button>
+            </div>
+            <div className="w-1/2 h-[70vh] rounded-3xl bg-[#CDEA68] ">
+                <img className= "w-full max-w-full rounded-2xl entered loaded h-auto" src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x939.jpg" alt="" />
+            </div>
+        </div>
       </div>
     </div>
   )
