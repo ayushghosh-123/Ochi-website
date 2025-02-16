@@ -5,6 +5,7 @@ import Marquee from './Component/Marquee'
 import Navbar from './Component/Navbar'
 import Eyes from './Component/Eyes'
 import Feature from './Component/Feature'
+import Cards from './Component/Cards'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Abou/>
       <Eyes/>
       <Feature/>
+      <Cards/>
     </div>
   )
 }
